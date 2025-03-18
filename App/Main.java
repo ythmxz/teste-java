@@ -5,26 +5,34 @@ public class Main {
     public static void main(String[] args) {
 
 		try (Scanner input = new Scanner(System.in)) {
-			String fName;
-			String lName;
-			String occup;
-			byte age;
+			String firstName;
+			String lastName;
+			String occupation;
+			int age;
 
 			System.out.print("\nWhat is your first name? ");
-			fName = input.nextLine();
+			firstName = input.nextLine();
 
 			System.out.print("What is your last name? ");
-			lName = input.nextLine();
+			lastName = input.nextLine();
 
-			System.out.println("What is your occupation? ");
-			occup = input.nextLine();
+			System.out.print("What is your occupation? ");
+			occupation = input.nextLine();
 
-			System.out.println("How old are you, " + fName + " " + lName + "?");
+			System.out.print("How old are you, " + firstName + " " + lastName + "? ");
 			age = input.nextByte();
 
-			Person myPerson = new Person(fName, lName, occup, 001, age);
+			Person myPerson1 = new Person(firstName, lastName, occupation, age);
+			myPerson1.presentInfo();
 
-			myPerson.presentInfo();
+			Person myPerson2 = new Person();
+
+			myPerson2.setFirstName("Ronaldo");
+			myPerson2.setLastName("Ribeiro");
+			myPerson2.setOccupation("Student");
+			myPerson2.setAge(19);
+
+			myPerson2.presentInfo();
 		}
 
     }

@@ -3,15 +3,22 @@ public class Person {
 	String firstName;
 	String lastName;
 	String occupation;
-	int id;
 	int age;
 
-	public Person(String firstName, String lastName, String occupation, int id, int age) {
+	public Person() {
+
+		this.firstName = null;
+		this.lastName = null;
+		this.occupation = null;
+		this.age = 0;
+
+	}
+
+	public Person(String firstName, String lastName, String occupation, int age) {
 
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.occupation = occupation;
-		this. id = id;
 		this. age = age;
 
 	}
@@ -22,9 +29,9 @@ public class Person {
 
 	}
 
-	public void setFirstName(String firstName) {
+	public void setFirstName(String newFirstName) {
 
-		this.firstName = firstName;
+		this.firstName = newFirstName;
 
 	}
 
@@ -34,9 +41,9 @@ public class Person {
 
 	}
 
-	public void setLastName(String lastName) {
+	public void setLastName(String newLastName) {
 
-		this.lastName = lastName;
+		this.lastName = newLastName;
 
 	}
 
@@ -46,21 +53,9 @@ public class Person {
 
 	}
 
-	public void setOccupation(String occupation) {
+	public void setOccupation(String newOccupation) {
 
-		this.occupation = occupation;
-
-	}
-
-	public int getId() {
-
-		return id;
-
-	}
-
-	public void setId(int id) {
-
-		this.id = id;
+		this.occupation = newOccupation;
 
 	}
 
@@ -70,9 +65,9 @@ public class Person {
 
 	}
 
-	public void setAge(int age) {
+	public void setAge(int newAge) {
 
-		this.age = age;
+		this.age = newAge;
 
 	}
 
