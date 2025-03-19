@@ -33,6 +33,7 @@ public class Main {
 			myPerson2.setAge(19);
 
 			myPerson2.presentInfo();
+
 		}
 
     }
