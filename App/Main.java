@@ -25,17 +25,8 @@ public class Main {
 
 		input.close();
 
-		Person myPerson1 = new Person(firstName, lastName, occupation, age);
-		myPerson1.presentInfo();
-
-		Person myPerson2 = new Person();
-
-		myPerson2.setFirstName("Ronaldo");
-		myPerson2.setLastName("Ribeiro");
-		myPerson2.setOccupation("Student");
-		myPerson2.setAge(19);
-
-		myPerson2.presentInfo();
+		Person myPerson = new Person(firstName, lastName, occupation, age);
+		myPerson.presentInfo();
 
     }
 
