@@ -21,7 +21,7 @@ public class Main {
 		occupation = input.nextLine();
 
 		System.out.print("How old are you, " + firstName + " " + lastName + "? ");
-		age = input.nextByte();
+		age = input.nextInt();
 
 		input.close();
 
